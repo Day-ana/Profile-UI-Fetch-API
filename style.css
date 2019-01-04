@@ -1,12 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-.column{
+.column {
   flex-basis: 100%;
 }
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #333;
   background: #eeeef0;
@@ -26,13 +26,13 @@ body {
   flex: 5;
 }
 
-main{
+main {
   max-width: 415px;
   margin: 0 auto;
 }
 
 header {
-  background-color: #603A87;
+  background-color: #ff5300;
   display: flex;
   flex-direction: row;
 }
@@ -46,32 +46,90 @@ header {
   padding-bottom: 23px;
 }
 
-header .back{
+header .back {
   flex: 1 auto;
   padding: 10px 15px;
   font-size: 4.5em;
   line-height: 0.2em;
   font-weight: 200;
   cursor: pointer;
-
 }
-header .back:after{
-  content: '\2039';
+header .back:after {
+  content: "\2039";
 }
-header .profile{
+header .profile {
   line-height: 0.5em;
 }
-header .hamburger-menu{
+header .hamburger-menu {
   flex: 1 auto;
   padding: 10px;
   text-align: right;
   line-height: 1em;
   font-size: 1.8em;
   cursor: pointer;
-
 }
-header .hamburger-menu:before{
-   content:'\2630';
+header .hamburger-menu:before {
+  content: "\2630";
+}
+video {
+  width: 100%;
+  margin: 0;
+}
+.video-container {
+  max-width: 415px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.video-container:hover .controls {
+  transform: translateY(0);
+}
+.controls {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  position: absolute;
+  background: #000;
+  transform: translateY(100%) translateY(-3px);
+  transition: ease-in-out 100ms;
+}
+.buttons button {
+  background: none;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.buttons button:before {
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  font-size: 28px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+.buttons button.play:before {
+  content: "\f144";
+}
+.buttons button.pause:before {
+  content: "\f28b";
+}
+
+.progress-bar {
+  height: 5px;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background: black;
+}
+.progress {
+  height: 5px;
+  background: orangered;
 }
 
 header h1 {
@@ -86,16 +144,16 @@ header h1 {
   padding: 0 45px;
 }
 
-li{
+li {
   list-style: none;
   padding-right: 30px;
 }
 .profile-container {
-  background-color: #EEEEF0
+  background-color: #eeeef0;
 }
 .contact-label {
   font-size: 14px;
-  color: #8F9295;
+  color: #8f9295;
   line-height: 1.25em;
 }
 
@@ -106,70 +164,68 @@ li{
   padding: 15px 0 23px 0;
 }
 
-.profile-main{
-  border:1px solid #D8DDE1;
+.profile-main {
+  border: 1px solid #d8dde1;
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  margin-left:15px;
-
+  margin-left: 15px;
 }
-.profile-main img{
+.profile-main img {
   width: 80px;
   height: 80px;
 }
 
 .section-container {
-    border-bottom: 1px solid #D8DDE1;
+  border-bottom: 1px solid #d8dde1;
 }
 .section-header {
   font-size: 14px;
-  color: #8F9295;
+  color: #8f9295;
   line-height: 1.25em;
 }
-.stats{
+.stats {
   background: #fff;
   padding-top: 15px;
 }
 .stats-label {
   font-size: 14px;
-  color: #8F9295;
+  color: #8f9295;
   line-height: 1.25em;
   display: inherit;
   text-align: center;
   margin-bottom: 15px;
 }
-.followings{
+.followings {
   background: #fff;
   padding: 10px 15px;
 }
-.following{
+.following {
   padding: 23px 20px 16px 13px;
   font-weight: 500;
   font-size: 1.2em;
 }
 
-.margin-10{
+.margin-10 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-span.follow-links{
-  color:#8F9295;
+span.follow-links {
+  color: #8f9295;
   float: right;
   margin: 0 10px;
-
 }
-span.left{
+span.left {
   float: left;
 }
-span.active{
-  color: #603A87;
-  border-bottom: 3px solid #603A87;
+span.active {
+  color: #ff5300;
+  border-bottom: 3px solid #ff5300;
   width: 82px;
 }
-.following-label{
+.following-label {
   margin: 10px 0;
-  color:#8F9295;
+  color: #8f9295;
 }
 .stats-total {
   font-size: 24px;
@@ -184,21 +240,21 @@ span.active{
   height: 40px;
   border-radius: 50%;
   margin-top: 10px;
-  border:1px solid #d8dde1;
+  border: 1px solid #d8dde1;
 }
-.column .followings{
+.column .followings {
   justify-content: center;
   align-items: center;
   margin: 10px 0;
   padding: 12px 13px;
 }
-.see-all{
+.see-all {
   padding: 7px 0 10px 0;
   text-align: right;
   cursor: pointer;
 }
-.see-all:after{
-  content: '\203A';
+.see-all:after {
+  content: "\203A";
   font-size: 3em;
   font-weight: 200;
   margin-left: 8px;

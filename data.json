@@ -1,19 +1,19 @@
 {
   "data": {
     "userInfo": {
-      "firstName": "John",
-      "lastName": "Smith",
-      "email": "webadmin@example.com",
+      "firstName": "Dayana",
+      "lastName": "Bliss",
+      "email": "Dayana@example.com",
       "phone": "1-800-555-6969",
       "mobile": "1-800-555-6968",
-      "location": "321 Ray Street Pleasanton, CA",
-      "avatarpath": "/avatars/avatar1465389809397-l.png",
+      "location": "42 Broadway Oakland, CA",
+      "avatarpath": "/avatars/icon.png",
       "userId": 1
     },
     "stats": [
-      {"title": "IDEAS", "total":813},
-      {"title": "VIEWS", "total":173502},
-      {"title": "POSTS", "total":1622}
+      { "title": "SHARES", "total": 813 },
+      { "title": "VIEWS", "total": 173502 },
+      { "title": "COMMENTS", "total": 1622 }
     ],
     "followings": [
       {
@@ -27,7 +27,7 @@
       },
       {
         "followee": {
-          "userDisplayName": "Super-rad-dude Henderson",
+          "userDisplayName": "Jimmy Hendrix",
           "avatar": "/avatars/avatar1.jpg",
           "userId": 111,
           "url": "/Page/UserProfile?userid=111"
@@ -36,7 +36,7 @@
       },
       {
         "followee": {
-          "userDisplayName": "John Watson",
+          "userDisplayName": "Elon Musk",
           "avatar": "/avatars/avatar1458848883442.jpg",
           "userId": 51,
           "url": "/Page/UserProfile?userid=51"
@@ -45,7 +45,7 @@
       },
       {
         "followee": {
-          "userDisplayName": "Yasser Seirawan",
+          "userDisplayName": "Jane Doe",
           "avatar": "/avatars/avatar2.jpg",
           "userId": 325,
           "url": "/Page/UserProfile?userid=325"
@@ -54,7 +54,7 @@
       },
       {
         "followee": {
-          "userDisplayName": "Alice May",
+          "userDisplayName": "Joe Rogan",
           "avatar": "/avatars/default_person.svg",
           "userId": 22,
           "url": "/Page/UserProfile?userid=22"
@@ -63,7 +63,7 @@
       },
       {
         "followee": {
-          "userDisplayName": "Boy Sack",
+          "userDisplayName": "Elon M",
           "avatar": "/avatars/avatar1467069430227.jpg",
           "userId": 4,
           "url": "/Page/UserProfile?userid=4"
